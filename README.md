@@ -19,3 +19,11 @@ parse方法用于生成一个.original.json文件，跟原来的文件数据一�
 
 ```
 keymap.parse(path.join(__dirname,"test_data")).then(err=>console.log(err))
+```
+
+
+#3.效果
+源文original.json 大小为14.3kb -> 生成了一个map文件15k(这个是一次性的固定map)和7kb的ouput.json, 通过将很长的key缩小减少了50%. 如果是大量需要实时同步的数据，例如游戏数据等，节省的数据还是挺客观的.
+
+#4.更好的办法
+将原值map成一个个的数组或者嵌套的数据，仍需探索
