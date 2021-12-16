@@ -1,5 +1,6 @@
 # json-keymap
 use autoincrease gene key replace orginal key to compress file.
+通过将固定数据结构的key映射到更短的key来节省传输大小
 
 #how to use 使用说明
 
